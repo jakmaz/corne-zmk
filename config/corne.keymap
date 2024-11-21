@@ -21,10 +21,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E             &kp R     &kp T           &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp ESC    &kp A  &kp S  &kp D             &kp F     &kp G           &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp V     &kp B           &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                         &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI    &kp SPACE  &mo 1  &mo 2
+&kp TAB    &kp Q  &kp W  &kp E             &kp R  &kp T           &kp Y      &kp U  &kp I         &kp O    &kp P     &kp BSPC
+&kp ESC    &kp A  &kp S  &kp D             &kp F  &kp G           &kp H      &kp J  &kp K         &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp V  &kp B           &kp N      &kp M  &kp COMMA     &kp DOT  &kp FSLH  &kp ENTER
+                         &kp LEFT_CONTROL  &mo 2  &kp LEFT_GUI    &kp SPACE  &mo 1  &kp LEFT_ALT
             >;
         };
 
@@ -37,10 +37,10 @@
 
             display-name = "Symbols";
             bindings = <
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5        &kp NUMBER_6       &kp NUMBER_7           &kp NUMBER_8     &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans     &trans        &trans        &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans        &kp BSLH      &trans
-&kp LSHFT  &trans        &trans        &trans          &trans                &trans              &kp UNDER          &kp PLUS               &kp LBRC         &kp RBRC      &kp PIPE      &kp TILDE
-                                       &trans          &trans                &trans              &trans             &trans                 &trans
+&trans     &kp N1  &kp N2  &kp N3          &kp N4                &kp N5              &kp N6             &kp N7                 &kp N8           &kp N9  &kp NUMBER_0  &trans
+&trans     &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans  &kp BSLH      &trans
+&kp LSHFT  &trans  &trans  &trans          &trans                &trans              &kp UNDER          &kp PLUS               &trans           &trans  &trans        &kp TILDE
+                           &trans          &trans                &trans              &trans             &trans                 &trans
             >;
         };
 
@@ -53,11 +53,29 @@
 
             display-name = "Navigation";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans  &trans     &trans  &trans
-                                        &trans        &trans        &trans          &trans    &trans    &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &kp LC(H)   &kp LC(J)         &kp LC(K)   &kp LC(L)   &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT    &kp DOWN          &kp UP      &kp RIGHT   &trans      &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &kp LA(N1)  &kp LA(NUMBER_2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &trans
+                                        &trans        &trans        &trans          &trans      &trans            &trans
             >;
+        };
+
+        sym_nav_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        sym_nav_combo {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
