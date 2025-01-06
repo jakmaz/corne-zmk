@@ -53,19 +53,19 @@
 
             display-name = "Navigation";
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &kp LC(H)   &kp LC(J)         &kp LC(K)   &kp LC(L)   &trans      &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT    &kp DOWN          &kp UP      &kp RIGHT   &trans      &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &kp LA(N1)  &kp LA(NUMBER_2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)  &trans
-                                        &trans        &trans        &trans          &trans      &trans            &trans
+&trans  &kp LG(N1)             &kp LG(N2)             &kp LG(N3)             &kp LG(N4)             &kp LG(N5)               &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SQT))))
+&trans  &trans                 &trans                 &trans                 &trans                 &trans                   &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &trans                         &trans
+&trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))    &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))          &trans
+                                                      &trans                 &trans                 &trans                   &trans                 &trans                 &trans
             >;
         };
 
         sym_nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
