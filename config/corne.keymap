@@ -13,12 +13,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             display-name = "Base";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F             &kp P  &kp B           &kp J      &kp L  &kp U         &kp Y    &kp SQT   &kp BSPC
@@ -29,13 +23,7 @@
         };
 
         sym_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Symbols";
+            display-name = "Sym";
             bindings = <
 &trans     &kp N1  &kp N2  &kp N3          &kp N4                &kp N5              &kp N6             &kp N7                 &kp N8           &kp N9  &kp NUMBER_0  &trans
 &trans     &trans  &trans  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans  &kp BSLH      &trans
@@ -45,13 +33,7 @@
         };
 
         nav_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Navigation";
+            display-name = "Nav";
             bindings = <
 &trans  &kp LG(N1)             &kp LG(N2)             &kp LG(N3)             &kp LG(N4)             &kp LG(N5)               &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SQT))))
 &trans  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))    &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &trans                         &trans
