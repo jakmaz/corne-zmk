@@ -1,4 +1,4 @@
-# Corne v2 Config
+# Corne Wireless Config
 
 ![Latest Firmware Build](https://github.com/jakmaz/corne-zmk/actions/workflows/build.yml/badge.svg)
 
