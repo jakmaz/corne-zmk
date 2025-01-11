@@ -4,7 +4,7 @@
 
 This repo allows me to edit, build, and download firmware for my Corne.
 
-![A wireless Corne keyboard with an black case, white blank keycaps, and nice! view microcontrollers and boards](./docs/assets/picture.jpeg)
+![A wireless Corne keyboard with an black case, white blank keycaps, and nice! view microcontrollers and boards](./docs/assets/corne-photo.jpeg)
 
 ## Keyboard Layout
 
