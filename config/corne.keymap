@@ -36,7 +36,7 @@
             display-name = "Nav";
             bindings = <
 &trans  &kp LG(N1)             &kp LG(N2)             &kp LG(N3)             &kp LG(N4)             &kp LG(N5)               &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SQT))))
-&trans  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))    &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &trans                         &trans
+&trans  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))    &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &kp TAB                        &trans
 &trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))    &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))          &trans
                                                       &trans                 &trans                 &trans                   &trans                 &trans                 &trans
             >;
