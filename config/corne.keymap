@@ -27,7 +27,7 @@
             bindings = <
 &trans     &kp N1           &kp N2     &kp N3          &kp N4                &kp N5              &kp N6             &kp N7                 &kp N8           &kp N9    &kp NUMBER_0   &trans
 &trans     &kp UNDER        &kp MINUS  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PLUS  &kp EQUAL      &trans
-&kp LSHFT  &kp EXCLAMATION  &kp AT     &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp ASTRK              &trans           &trans    &kp BACKSLASH  &kp TILDE
+&kp LSHFT  &kp EXCLAMATION  &kp AT     &kp HASH        &kp DOLLAR            &kp PERCENT         &kp CARET          &kp ASTRK              &trans           &trans    &kp BACKSLASH  &kp GRAVE
                                        &trans          &trans                &kp SPACE           &trans             &trans                 &trans
             >;
         };
@@ -45,7 +45,7 @@
         sym_nav_layer {
             display-name = "Symnav";
             bindings = <
-&bt BT_CLR    &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))    &kp LS(LA(LC(LG(N6))))     &kp LS(LA(LC(LG(N7))))     &kp LS(LA(LC(LG(N8))))     &kp LS(LA(LC(LG(N9))))          &kp LS(LA(LC(LG(N0))))           &trans
+&bt BT_CLR    &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))    &kp LS(LA(LC(LG(N6))))     &kp LS(LA(LC(LG(N7))))     &kp LS(LA(LC(LG(N8))))     &kp LS(LA(LC(LG(N9))))          &kp LS(LA(LC(LG(N0))))           &kp LG(LA(LC(LS(GRAVE))))
 &bt BT_SEL 0  &kp LS(LA(LC(LG(N))))   &kp K_MUTE              &kp C_VOL_DN            &kp C_VOL_UP            &trans                    &kp LS(LA(LC(LG(A))))      &kp LS(LA(LC(LG(S))))      &kp LS(LA(LC(LG(D))))      &kp LS(LA(LC(LG(F))))           &kp LS(LA(LC(LG(G))))            &trans
 &bt BT_SEL 1  &kp LS(LA(LC(LG(M))))   &kp C_PP                &kp C_PREV              &kp C_NEXT              &trans                    &kp LG(LS(LA(LC(SLASH))))  &kp LA(LC(LS(LG(EQUAL))))  &kp LS(LA(LC(LG(MINUS))))  &kp LA(LC(LG(LS(LEFT_BRACE))))  &kp LS(LA(LC(LG(RIGHT_BRACE))))  &trans
                                                               &trans                  &trans                  &trans                    &trans                     &trans                     &trans
