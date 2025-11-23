@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -15,10 +14,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F             &kp P          &kp B           &kp J      &kp L  &kp U         &kp Y    &kp SEMI  &kp BSPC
-&kp ESC    &kp A  &kp R  &kp S             &kp T          &kp G           &kp M      &kp N  &kp E         &kp I    &kp O     &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C             &kp D          &kp V           &kp K      &kp H  &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
-                         &kp LEFT_CONTROL  &kp RIGHT_GUI  &kp LEFT_GUI    &kp SPACE  &mo 1  &kp LEFT_ALT
+&kp TAB    &kp Q  &kp W  &kp E      &kp R     &kp T       &kp Y      &kp U     &kp I      &kp O    &kp P     &kp LBKT
+&kp CAPS   &kp A  &kp S  &kp D      &kp F     &kp G       &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z  &kp X  &kp C      &kp V     &kp B       &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LCTRL  &kp LALT  &kp LGUI    &kp SPACE  &kp RGUI  &kp RALT
             >;
         };
 
@@ -33,32 +32,26 @@
         };
 
         nav_layer {
-            display-name = "Nav";
             bindings = <
-&trans  &kp LG(N1)             &kp LG(N2)             &kp LG(N3)             &kp LG(N4)             &kp LG(N5)               &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SQT))))
-&trans  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))    &kp LEFT               &kp DOWN               &kp UP                 &kp RIGHT              &kp TAB                        &trans
-&trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))    &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))          &trans
-                                                      &trans                 &trans                 &trans                   &trans                 &trans                 &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp TAB  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans   &trans
+                        &trans  &trans  &trans    &trans    &trans    &trans
             >;
+
+            label = "Nav";
         };
 
-        sym_nav_layer {
-            display-name = "Symnav";
+        colemak {
+            display-name = "Colemak";
             bindings = <
-&bt BT_CLR    &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LS(LA(LC(LG(N3))))  &kp LS(LA(LC(LG(N4))))  &kp LS(LA(LC(LG(N5))))    &kp LS(LA(LC(LG(N6))))     &kp LS(LA(LC(LG(N7))))     &kp LS(LA(LC(LG(N8))))     &kp LS(LA(LC(LG(N9))))          &kp LS(LA(LC(LG(N0))))           &kp LG(LA(LC(LS(GRAVE))))
-&bt BT_SEL 0  &kp LS(LA(LC(LG(N))))   &kp K_MUTE              &kp C_VOL_DN            &kp C_VOL_UP            &trans                    &kp LS(LA(LC(LG(A))))      &kp LS(LA(LC(LG(S))))      &kp LS(LA(LC(LG(D))))      &kp LS(LA(LC(LG(F))))           &kp LS(LA(LC(LG(G))))            &trans
-&bt BT_SEL 1  &kp LS(LA(LC(LG(M))))   &kp C_PP                &kp C_PREV              &kp C_NEXT              &trans                    &kp LG(LS(LA(LC(SLASH))))  &kp LA(LC(LS(LG(EQUAL))))  &kp LS(LA(LC(LG(MINUS))))  &kp LA(LC(LG(LS(LEFT_BRACE))))  &kp LS(LA(LC(LG(RIGHT_BRACE))))  &trans
-                                                              &trans                  &trans                  &trans                    &trans                     &trans                     &trans
+&kp TAB    &kp Q  &kp W  &kp F             &kp P  &kp B           &kp J      &kp L  &kp U         &kp Y    &kp SEMI  &kp BSPC
+&kp ESC    &kp A  &kp R  &kp S             &kp T  &kp G           &kp M      &kp N  &kp E         &kp I    &kp O     &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C             &kp D  &kp V           &kp K      &kp H  &kp COMMA     &kp DOT  &kp FSLH  &kp SQT
+                         &kp LEFT_CONTROL  &mo 2  &kp LEFT_GUI    &kp SPACE  &mo 1  &kp LEFT_ALT
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        sym_nav_combo {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
