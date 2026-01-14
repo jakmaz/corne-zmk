@@ -5,19 +5,9 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        change-mode {
-            bindings = <&tog 3>;
-            key-positions = <1 0>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -43,10 +33,10 @@
 
         nav_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &kp TAB  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans      &trans      &trans     &trans   &trans
-                        &trans  &trans  &trans    &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp TAB  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans   &trans
+                        &trans  &trans  &trans    &trans    &trans    &trans
             >;
 
             label = "Nav";
